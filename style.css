@@ -1,0 +1,147 @@
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a90e2;
+}
+
+.weather-info {
+  margin-top: 50px;
+}
+
+.speech-control {
+  margin-top: 50px;
+}
+
+.speech-control button {
+  margin-right: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+}
+
+th {
+  background-color: #4a90e2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+#cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.card {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card .card-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .temp {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .humidity {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+/* Colors */
+.card-body {
+  background-color: #e6f7ff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.temp,
+.humidity {
+  color: #333;
+}
+
+.card-header {
+  background-color: #4a90e2;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px;
+}
